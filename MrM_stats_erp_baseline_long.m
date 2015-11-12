@@ -188,7 +188,7 @@ elseif any(strfind(cfg.mode, 'paired)'))
         if strcmp(cfg.mode, 'random within and across (paired)')
             % different random baseline time points across trials
             % are paired with postonset time points for permutation
-            % (different for each trial, random across loops)
+            % (same for each time point, different for each trial and freq random across loops ?)
 
             % build the random draws index matrix
             pick_Rd_Index = round(rand(nb_trial,nb_tf) * (id_Bl(2) - id_Bl(1)) + id_Bl(1));
